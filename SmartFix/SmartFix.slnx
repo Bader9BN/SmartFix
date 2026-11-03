@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="SmartFix.API/SmartFix.API.csproj" />
+  <Project Path="SmartFix.Application/SmartFix.Application.csproj" />
+  <Project Path="SmartFix.Domain/SmartFix.Domain.csproj" />
+  <Project Path="SmartFix.Infrastructur/SmartFix.Infrastructur.csproj" />
+  <Project Path="SmartFix.MVC/SmartFix.MVC.csproj" />
+  <Project Path="SmartFix.Tests/SmartFix.Tests.csproj" />
+</Solution>

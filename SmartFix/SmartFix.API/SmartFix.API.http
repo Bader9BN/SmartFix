@@ -1,0 +1,6 @@
+@SmartFix.API_HostAddress = http://localhost:5042
+
+GET {{SmartFix.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

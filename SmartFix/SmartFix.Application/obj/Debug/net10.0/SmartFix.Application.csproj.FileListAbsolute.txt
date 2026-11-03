@@ -1,0 +1,6 @@
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Application\obj\Debug\net10.0\SmartFix.Application.csproj.AssemblyReference.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Application\obj\Debug\net10.0\SmartFix.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Application\obj\Debug\net10.0\SmartFix.Application.AssemblyInfoInputs.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Application\obj\Debug\net10.0\SmartFix.Application.AssemblyInfo.cs
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Application\obj\Debug\net10.0\SmartFix.Application.csproj.CoreCompileInputs.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Application\obj\Debug\net10.0\SmartFix.Application.sourcelink.json

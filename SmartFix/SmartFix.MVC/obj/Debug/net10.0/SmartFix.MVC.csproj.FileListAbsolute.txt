@@ -1,0 +1,9 @@
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net10.0\SmartFix.MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net10.0\SmartFix.MVC.AssemblyInfoInputs.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net10.0\SmartFix.MVC.AssemblyInfo.cs
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net10.0\SmartFix.MVC.csproj.CoreCompileInputs.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net10.0\SmartFix.MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net10.0\SmartFix.MVC.RazorAssemblyInfo.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net10.0\SmartFix.MVC.RazorAssemblyInfo.cs
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net10.0\SmartFix.MVC.sourcelink.json

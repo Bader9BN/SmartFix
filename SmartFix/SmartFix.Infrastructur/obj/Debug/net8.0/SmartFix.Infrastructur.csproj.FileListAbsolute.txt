@@ -1,0 +1,16 @@
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\SmartFix.Infrastructur.csproj.AssemblyReference.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\SmartFix.Infrastructur.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\SmartFix.Infrastructur.AssemblyInfoInputs.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\SmartFix.Infrastructur.AssemblyInfo.cs
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\SmartFix.Infrastructur.csproj.CoreCompileInputs.cache
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\SmartFix.Infrastructur.sourcelink.json
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\bin\Debug\net8.0\SmartFix.Infrastructur.deps.json
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\bin\Debug\net8.0\SmartFix.Infrastructur.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\bin\Debug\net8.0\SmartFix.Infrastructur.pdb
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\bin\Debug\net8.0\SmartFix.Domain.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\bin\Debug\net8.0\SmartFix.Domain.pdb
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\SmartFix.9387CCA2.Up2Date
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\SmartFix.Infrastructur.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\refint\SmartFix.Infrastructur.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\SmartFix.Infrastructur.pdb
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Infrastructur\obj\Debug\net8.0\ref\SmartFix.Infrastructur.dll
