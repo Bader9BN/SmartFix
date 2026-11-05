@@ -35,12 +35,12 @@
                             <td>@(ticket.Customer?.Username ?? "غير معروف")</td>
                             <td>@(ticket.Device?.DeviceName ?? "جهاز غير محدد")</td>
                             <td>
-                                <span class="badge @(ticket.Priority == "Urgent" ? "bg-danger" : ticket.Priority == "High" ? "bg-warning text-dark" : "bg-info")">
+                                <span class="badge @(ticket.Priority == SmartFix.Domain.Enums.Priority.Urgent ? "bg-danger" : ticket.Priority == SmartFix.Domain.Enums.Priority.High ? "bg-warning text-dark" : "bg-info")">
                                     @ticket.Priority
                                 </span>
                             </td>
                             <td>
-                                <span class="badge @(ticket.Status == "Repaired" ? "bg-success" : ticket.Status == "Pending" ? "bg-secondary" : "bg-primary")">
+                                <span class="badge @(ticket.Status == SmartFix.Domain.Enums.TicketStatus.Repaired ? "bg-success" : ticket.Status == SmartFix.Domain.Enums.TicketStatus.Pending ? "bg-secondary" : "bg-primary")">
                                     @ticket.Status
                                 </span>
                             </td>

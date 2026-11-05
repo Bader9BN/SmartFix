@@ -21,7 +21,6 @@ namespace SmartFix.Infrastructur.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // تكوين الجداول والعلاقات لضمان التوافق مع أوراكل (Oracle Column & Table Mappings)
             modelBuilder.Entity<User>(entity =>
             {
                 entity.ToTable("USERS");
@@ -62,8 +61,8 @@ namespace SmartFix.Infrastructur.Data
                 entity.Property(e => e.CustomerId).HasColumnName("CUSTOMERID");
                 entity.Property(e => e.TechnicianId).HasColumnName("TECHNICIANID");
                 entity.Property(e => e.IssueDescription).HasColumnName("ISSUEDESCRIPTION").IsRequired();
-                entity.Property(e => e.Status).HasColumnName("STATUS").HasMaxLength(50);
-                entity.Property(e => e.Priority).HasColumnName("PRIORITY").HasMaxLength(20);
+                entity.Property(e => e.Status).HasColumnName("STATUS");
+                entity.Property(e => e.Priority).HasColumnName("PRIORITY");
                 entity.Property(e => e.EstimatedCost).HasColumnName("ESTIMATEDCOST");
                 entity.Property(e => e.FinalCost).HasColumnName("FINALCOST");
                 entity.Property(e => e.CreatedAt).HasColumnName("CREATEDAT");
@@ -90,8 +89,8 @@ namespace SmartFix.Infrastructur.Data
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Id).HasColumnName("ID");
                 entity.Property(e => e.TicketId).HasColumnName("TICKETID");
-                entity.Property(e => e.OldStatus).HasColumnName("OLDSTATUS").HasMaxLength(50);
-                entity.Property(e => e.NewStatus).HasColumnName("NEWSTATUS").IsRequired().HasMaxLength(50);
+                entity.Property(e => e.OldStatus).HasColumnName("OLDSTATUS");
+                entity.Property(e => e.NewStatus).HasColumnName("NEWSTATUS").IsRequired();
                 entity.Property(e => e.Notes).HasColumnName("NOTES").HasMaxLength(500);
                 entity.Property(e => e.ChangedBy).HasColumnName("CHANGEDBY");
                 entity.Property(e => e.CreatedAt).HasColumnName("CREATEDAT");
@@ -141,7 +140,7 @@ namespace SmartFix.Infrastructur.Data
                 entity.Property(e => e.Id).HasColumnName("ID");
                 entity.Property(e => e.TicketId).HasColumnName("TICKETID");
                 entity.Property(e => e.TotalAmount).HasColumnName("TOTALAMOUNT");
-                entity.Property(e => e.PaymentStatus).HasColumnName("PAYMENTSTATUS").HasMaxLength(30);
+                entity.Property(e => e.PaymentStatus).HasColumnName("PAYMENTSTATUS");
                 entity.Property(e => e.PaymentMethod).HasColumnName("PAYMENTMETHOD").HasMaxLength(30);
                 entity.Property(e => e.IssuedAt).HasColumnName("ISSUEDAT");
 

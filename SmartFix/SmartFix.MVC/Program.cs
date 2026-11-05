@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using SmartFix.Application.Interfaces;
 using SmartFix.Application.Services;
@@ -12,8 +13,18 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<SmartFixDbContext>(options =>
     options.UseInMemoryDatabase("SmartFixDb"));
 
-// تسجيل خدمة التذاكر في نظام Dependency Injection
+// تفعيل المصادقة عبر الكوكيز (Cookie Authentication)
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login";
+        options.LogoutPath = "/Account/Logout";
+        options.ExpireTimeSpan = TimeSpan.FromHours(8);
+    });
+
+// تسجيل خدمات التطبيق
 builder.Services.AddScoped<ITicketService, TicketService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
@@ -23,29 +34,11 @@ using (var scope = app.Services.CreateScope())
     var context = scope.ServiceProvider.GetRequiredService<SmartFixDbContext>();
     if (!context.Users.Any())
     {
-        var customer = new SmartFix.Domain.Entities.User
-        {
-            Username = "احمد علي",
-            Email = "ahmed@example.com",
-            PasswordHash = "hashed_pass",
-            Role = "Customer",
-            PhoneNumber = "0501234567"
-        };
-        context.Users.Add(customer);
-        context.SaveChanges();
-
-        var device = new SmartFix.Domain.Entities.Device
-        {
-            DeviceName = "iPhone 15 Pro",
-            DeviceType = "Phone",
-            SerialNumber = "SN-998877",
-            CustomerId = customer.Id
-        };
-        context.Devices.Add(device);
-        context.SaveChanges();
-
-        var ticketService = scope.ServiceProvider.GetRequiredService<ITicketService>();
-        ticketService.CreateTicketAsync(customer.Id, device.Id, "الشاشة لا تستجيب للمس بعد السقوط", "High").Wait();
+        var authService = scope.ServiceProvider.GetRequiredService<IAuthService>();
+        // إنشاء مستخدم تجريبي بصلاحية مدير (Admin)
+        await authService.RegisterAsync("مدير النظام", "admin@smartfix.com", "Password123", "Admin", "0501111111");
+        // إنشاء عميل تجريبي
+        await authService.RegisterAsync("احمد علي", "ahmed@example.com", "Password123", "Customer", "0501234567");
     }
 }
 
@@ -61,10 +54,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication(); // تفعيل المصادقة (مهم جداً أن تكون قبل Authorization)
+app.UseAuthorization();  // تفعيل الصلاحيات
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Tickets}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 
 app.Run();

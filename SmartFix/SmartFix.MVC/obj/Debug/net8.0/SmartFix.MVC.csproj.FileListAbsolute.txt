@@ -44,3 +44,6 @@ C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\D
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net8.0\SmartFix.MVC.pdb
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net8.0\SmartFix.MVC.genruntimeconfig.cache
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net8.0\ref\SmartFix.MVC.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.MVC\obj\Debug\net8.0\SmartFix.MVC.MvcApplicationPartsAssemblyInfo.cs

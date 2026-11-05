@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SmartFix.Application.Interfaces;
 using SmartFix.Domain.Entities;
+using SmartFix.Domain.Enums;
 using SmartFix.Infrastructur.Data;
 
 namespace SmartFix.Application.Services
@@ -39,10 +40,11 @@ namespace SmartFix.Application.Services
                 .FirstOrDefaultAsync(t => t.Id == id);
         }
 
-        public async Task<MaintenanceTicket> CreateTicketAsync(int customerId, int deviceId, string issueDescription, string priority)
+        public async Task<MaintenanceTicket> CreateTicketAsync(int customerId, int deviceId, string issueDescription, string priorityStr)
         {
-            // توليد رقم تذكرة فريد تلقائياً
             string ticketNumber = $"TCK-{DateTime.UtcNow.Year}-{new Random().Next(1000, 9999)}";
+
+            Enum.TryParse<Priority>(priorityStr, true, out var priorityEnum);
 
             var ticket = new MaintenanceTicket
             {
@@ -50,19 +52,18 @@ namespace SmartFix.Application.Services
                 CustomerId = customerId,
                 DeviceId = deviceId,
                 IssueDescription = issueDescription,
-                Priority = priority,
-                Status = "Pending",
+                Priority = priorityEnum,
+                Status = TicketStatus.Pending,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
 
             _context.MaintenanceTickets.Add(ticket);
 
-            // تسجيل الحركة الأولى في السجلات (Audit Log)
             var log = new TicketLog
             {
                 Ticket = ticket,
-                NewStatus = "Pending",
+                NewStatus = TicketStatus.Pending,
                 Notes = "طلب صيانة جديد تم إنشاؤه من قبل العميل.",
                 ChangedBy = customerId,
                 CreatedAt = DateTime.UtcNow
@@ -73,21 +74,25 @@ namespace SmartFix.Application.Services
             return ticket;
         }
 
-        public async Task<bool> UpdateTicketStatusAsync(int ticketId, string newStatus, int changedByUserId, string? notes)
+        public async Task<bool> UpdateTicketStatusAsync(int ticketId, string newStatusStr, int changedByUserId, string? notes)
         {
             var ticket = await _context.MaintenanceTickets.FindAsync(ticketId);
             if (ticket == null) return false;
 
-            string? oldStatus = ticket.Status;
-            ticket.Status = newStatus;
+            TicketStatus? oldStatus = ticket.Status;
+
+            if (Enum.TryParse<TicketStatus>(newStatusStr, true, out var newStatusEnum))
+            {
+                ticket.Status = newStatusEnum;
+            }
+
             ticket.UpdatedAt = DateTime.UtcNow;
 
-            // إضافة سجل تاريخي للتغيير
             var log = new TicketLog
             {
                 TicketId = ticketId,
                 OldStatus = oldStatus,
-                NewStatus = newStatus,
+                NewStatus = ticket.Status,
                 Notes = notes,
                 ChangedBy = changedByUserId,
                 CreatedAt = DateTime.UtcNow
@@ -110,7 +115,7 @@ namespace SmartFix.Application.Services
                 TicketId = ticketId,
                 NewStatus = ticket.Status,
                 Notes = "تم تعيين فني جديد للمهمة.",
-                ChangedBy = 1, // نفترض أن المسؤول (Admin) هو من قام بالتعيين
+                ChangedBy = 1,
                 CreatedAt = DateTime.UtcNow
             };
 

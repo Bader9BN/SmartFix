@@ -18,15 +18,6 @@ C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -117,3 +108,5 @@ C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\obj
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\obj\Debug\net8.0\SmartFix.Tests.pdb
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\obj\Debug\net8.0\SmartFix.Tests.genruntimeconfig.cache
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\obj\Debug\net8.0\ref\SmartFix.Tests.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll

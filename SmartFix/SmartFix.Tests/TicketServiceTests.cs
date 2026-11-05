@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SmartFix.Application.Services;
 using SmartFix.Infrastructur.Data;
+using SmartFix.Domain.Enums;
 using Xunit;
 
 namespace SmartFix.Tests
@@ -20,17 +21,17 @@ namespace SmartFix.Tests
         [Fact]
         public async Task CreateTicketAsync_ShouldCreateTicketAndLogEntry()
         {
-            // Arrange (تجهيز التست)
+            // Arrange
             using var context = GetInMemoryDbContext();
             var service = new TicketService(context);
 
-            // Act (تنفيذ العملية)
+            // Act
             var ticket = await service.CreateTicketAsync(1, 1, "الشاشة مكسورة وتحتاج استبدال", "High");
 
-            // Assert (التحقق من النتيجة)
+            // Assert
             Assert.NotNull(ticket);
             Assert.StartsWith("TCK-", ticket.TicketNumber);
-            Assert.Equal("Pending", ticket.Status);
+            Assert.Equal(TicketStatus.Pending, ticket.Status);
 
             // التحقق من إنشاء السجل التاريخي (Log)
             var logCount = await context.TicketLogs.CountAsync();

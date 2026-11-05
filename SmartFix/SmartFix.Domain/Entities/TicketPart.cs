@@ -9,6 +9,7 @@ namespace SmartFix.Domain.Entities
         public int PartId { get; set; }
         public int Quantity { get; set; } = 1;
         public decimal UnitPriceAtTime { get; set; }
+        public DateTime UsedAt { get; set; } = DateTime.UtcNow;
 
         // Navigation properties
         public MaintenanceTicket? Ticket { get; set; }

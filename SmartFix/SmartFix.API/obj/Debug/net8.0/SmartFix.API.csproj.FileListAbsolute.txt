@@ -44,3 +44,5 @@ C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.API\obj\D
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.API\obj\Debug\net8.0\SmartFix.API.pdb
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.API\obj\Debug\net8.0\SmartFix.API.genruntimeconfig.cache
 C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.API\obj\Debug\net8.0\ref\SmartFix.API.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\atttt\OneDrive\سطح المكتب\clauemsh\SmartFix\SmartFix.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll

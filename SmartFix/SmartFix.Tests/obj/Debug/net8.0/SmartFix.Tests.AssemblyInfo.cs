@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartFix.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a756261c1cd6434af9a559f40d324dbe67a866d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59d3786cf1a9c8f637bfea86399b5fb3e87f5ece")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartFix.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartFix.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

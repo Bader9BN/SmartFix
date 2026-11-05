@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using SmartFix.Domain.Common;
+using SmartFix.Domain.Enums;
 
 namespace SmartFix.Domain.Entities
 {
-    public class MaintenanceTicket
+    public class MaintenanceTicket : IAuditableEntity
     {
         public int Id { get; set; }
         public string TicketNumber { get; set; } = string.Empty;
@@ -11,12 +13,22 @@ namespace SmartFix.Domain.Entities
         public int CustomerId { get; set; }
         public int? TechnicianId { get; set; }
         public string IssueDescription { get; set; } = string.Empty;
-        public string Status { get; set; } = "Pending"; // Pending, InProgress, WaitingForParts, Repaired, Delivered, Cancelled
-        public string Priority { get; set; } = "Medium"; // Low, Medium, High, Urgent
+        public TicketStatus Status { get; set; } = TicketStatus.Pending;
+        public Priority Priority { get; set; } = Priority.Medium;
+        public string? Diagnosis { get; set; }
+        public string? Solution { get; set; }
+        public string? CustomerNotes { get; set; }
         public decimal? EstimatedCost { get; set; }
         public decimal? FinalCost { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime? EstimatedCompletion { get; set; }
+        public DateTime? ActualCompletion { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
+        // IAuditableEntity
+        public string? CreatedBy { get; set; }
+        public string? LastModifiedBy { get; set; }
+        public DateTime? LastModifiedAt { get; set; }
 
         // Navigation properties
         public Device? Device { get; set; }
