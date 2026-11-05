@@ -28,7 +28,7 @@ SmartFix follows the **N-Tier Clean Architecture** pattern to ensure modularity,
 
 ## 🛠️ Tech Stack
 
-- **Backend:** C# 12, ASP.NET Core 8.0 (MVC & Web API)
+- **Backend:** C# 12, ASP.NET Core (MVC & Web API)
 - **Database:** Oracle Database (EF Core configured with explicit table/column mappings)
 - **Frontend / Mobile:** Bootstrap 5 (RTL support), Razor Views, Flutter (Dart)
 - **Testing:** xUnit, EF Core InMemory
